@@ -1,0 +1,12 @@
+% student accomodations (assigned a single room)
+accomodation(yanaton).
+accomodation(steffen).
+accomodation(bartlett).
+accomodation(solomon).
+accomodation(mylo).
+
+accomodation(dorit).
+accomodation(darcie).
+accomodation(sharity).
+accomodation(mitzi).
+accomodation(leeann).
