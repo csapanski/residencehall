@@ -25,6 +25,10 @@
 % :- #count{S, R : room_assignment(S, R), room(F, R, 2, H)} != 2. 
 % :- #count{S, R : room_assignment(S, R), room(F, R, 3, H)} != 3. 
 
+% % Lighten the load of student_pref by adding roommates.
+% roommates(N, R) :- student_pref(N, R, T, L).
+% roommates(R, N) :- roommates(N, R).
+
 % % Optimize 
 % % Trying to place people with their roommate choices
 % :~ student_pref(N1, N2, T1, L1), student_pref(N2, N1, T2, L2), room_assignment(N1, R)
