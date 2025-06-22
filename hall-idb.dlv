@@ -21,6 +21,8 @@
 :- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
 
 % Cannot overfill rooms
-
+:- #count{S, R : room_assignment(S, R), room(F, R, 1, H)} != 1. 
+:- #count{S, R : room_assignment(S, R), room(F, R, 2, H)} != 2. 
+:- #count{S, R : room_assignment(S, R), room(F, R, 3, H)} != 3. 
 
 % Optimize 
