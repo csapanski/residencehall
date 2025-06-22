@@ -1,1 +1,20 @@
-% main idb for residence hall assignments
+% Guess
+{room_assignment(S, R) : room(F, R, O, H)} = 1 :- student(N, G).
+
+% Check
+% All rooms must be filled to capacity
+
+
+% Doubles or triples must contain students of the same gender
+
+
+% Fill Ethridge from the bottom floor up (if there are any empty rooms, they should be on the top floor)
+
+
+% Prioritize accommodations for students with disabilities to be placed in single rooms
+
+
+% Cannot overfill rooms
+
+
+% Optimize 
