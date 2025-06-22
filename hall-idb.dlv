@@ -26,3 +26,6 @@
 :- #count{S, R : room_assignment(S, R), room(F, R, 3, H)} != 3. 
 
 % Optimize 
+
+% Trying to place people with their roommate choices
+:~
