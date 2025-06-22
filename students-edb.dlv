@@ -205,7 +205,7 @@ student(geoffry, male).
 student(rodrick, male).
 student(chalmers, male).
 student(dyson, male).
-student(piet, male).
+student(yev, male).
 student(constantine, male).
 student(penn, male).
 student(barny, male).
