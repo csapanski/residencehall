@@ -1,18 +1,24 @@
-% Guess
+% Guess - generate all possible configurations 
+% choice rule to assign exactly one room to each student
 {room_assignment(S, R) : room(F, R, O, H)} = 1 :- student(N, G).
 
-% Check
+% Check - hard constraints 
 % All rooms must be filled to capacity
-
+:- room(F, R, 1, H), not room_assignment(S, R).
+:- room(F, R, 2, H), not room_assignment(S1, R), not room_assignment(S2, R), S1>S2.
+:- room(F, R, 3, H), not room_assignment(S1, R), not room_assignment(S2, R), 
+    not room_assignment(S3, R), S1>S2, S2>S3, S1>S3.
 
 % Doubles or triples must contain students of the same gender
-
+:- room(F, R, O, H), room_assignment(S1, R), room_assignment(S2, R), student(S1, G1), 
+    student(S2, G2), S1 != S2, G1 != G2.
 
 % Fill Ethridge from the bottom floor up (if there are any empty rooms, they should be on the top floor)
-
+:- room(F1, R1, O1, H1), room(F2, R2, O1, H1), not room_assignment(S1, R1), room_assignment(S2, R2),
+    R1 > R2.
 
 % Prioritize accommodations for students with disabilities to be placed in single rooms
-
+:- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
 
 % Cannot overfill rooms
 
