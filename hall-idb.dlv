@@ -1,43 +1,44 @@
 % Guess - generate all possible configurations 
 % choice rule to assign exactly one room to each student
-{room_assignment(S, R) : room(F, R, O, H)} = 1 :- student(N, G).
+{room_assignment(S, R) : room(F, R, O, H)} = 1 :- student(S, G).
 
-% Check - hard constraints 
-% All rooms must be filled to capacity
-:- room(F, R, 1, H), not room_assignment(S, R).
-:- room(F, R, 2, H), not room_assignment(S1, R), not room_assignment(S2, R), S1>S2.
+% % Check - hard constraints 
+% % All rooms must be filled to capacity
+:- room(F, R, 1, H), not room_assignment(S, R), student(S, G).
+:- room(F, R, 2, H), not room_assignment(S1, R), not room_assignment(S2, R), S1>S2, student(S1, G1), student(S2, G2).
 :- room(F, R, 3, H), not room_assignment(S1, R), not room_assignment(S2, R), 
-    not room_assignment(S3, R), S1>S2, S2>S3, S1>S3.
+    not room_assignment(S3, R), S1>S2, S2>S3, S1>S3, student(S1, G1), student(S2, G2), student(S3, G3).
 
-% Doubles or triples must contain students of the same gender
-:- room(F, R, O, H), room_assignment(S1, R), room_assignment(S2, R), student(S1, G1), 
-    student(S2, G2), S1 != S2, G1 != G2.
+% % Doubles or triples must contain students of the same gender
+% :- room(F, R, O, H), room_assignment(S1, R), room_assignment(S2, R), student(S1, G1), 
+%     student(S2, G2), S1 != S2, G1 != G2.
 
-% Fill Ethridge from the bottom floor up (if there are any empty rooms, they should be on the top floor)
-:- room(F1, R1, O1, H1), room(F2, R2, O1, H1), not room_assignment(S1, R1), room_assignment(S2, R2),
-    R1 > R2.
+% % Fill Ethridge from the bottom floor up (if there are any empty rooms, they should be on the top floor)
+% :- room(F1, R1, O1, H1), room(F2, R2, O1, H1), not room_assignment(S1, R1), room_assignment(S2, R2),
+%     R1 > R2.
 
-% Prioritize accommodations for students with disabilities to be placed in single rooms
-:- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
+% % Prioritize accommodations for students with disabilities to be placed in single rooms
+% :- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
 
-% Cannot overfill rooms
-:- #count{S, R : room_assignment(S, R), room(F, R, 1, H)} != 1. 
-:- #count{S, R : room_assignment(S, R), room(F, R, 2, H)} != 2. 
-:- #count{S, R : room_assignment(S, R), room(F, R, 3, H)} != 3. 
+% % Cannot overfill rooms
+% :- #count{S, R : room_assignment(S, R), room(F, R, 1, H)} != 1. 
+% :- #count{S, R : room_assignment(S, R), room(F, R, 2, H)} != 2. 
+% :- #count{S, R : room_assignment(S, R), room(F, R, 3, H)} != 3. 
 
-% Optimize 
-% Trying to place people with their roommate choices
-:~ student_pref(N1, N2, T1, L1), student_pref(N2, N1, T2, L2), room_assignment(N1, R)
-    room_assignment(N2, R). [1@5]
+% % Optimize 
+% % Trying to place people with their roommate choices
+% :~ student_pref(N1, N2, T1, L1), student_pref(N2, N1, T2, L2), room_assignment(N1, R)
+%     room_assignment(N2, R). [1@5]
 
-% Trying to place people with their preferred room type
-:~ student_pref(N, N2, T, L), room_assignment(N, R), room(F, R, O, H), T = O. [1@4]
+% % Trying to place people with their preferred room type
+% :~ student_pref(N, N2, T, L), room_assignment(N, R), room(F, R, O, H), T = O. [1@4]
 
-% Trying to place people with their LLC
-:~ student_pref(N, N2, T, L), room_assignment(N, R), room(F, R, O, H), L = H. [1@3]
+% % Trying to place people with their LLC
+% :~ student_pref(N, N2, T, L), room_assignment(N, R), room(F, R, O, H), L = H. [1@3]
 
-% Trying to place people that want to live on a specific floor
+% % Trying to place people that want to live on a specific floor
 
 
-% Trying to place people who want two windows in corner rooms / rooms with two windows
+% % Trying to place people who want two windows in corner rooms / rooms with two windows
 
+#show room_assignment/2.
