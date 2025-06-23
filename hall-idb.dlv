@@ -35,12 +35,12 @@ empty_room(R) :- not full_room(R), room(F, R, O, H).
 
 % % Optimize 
 % % Trying to place people with their roommate choices
-:~ roommate_assigned(S1, S2, R), roommate(S1, S2). [1@5]
-roommate_assigned(S1, S2, R) :- room_assignment(S1, R), room_assignment(S2, R), S1!=S2.
-#show roommate_assigned/3.
+% :~ roommate_assigned(S1, S2, R), roommate(S1, S2). [1@5]
+% roommate_assigned(S1, S2, R) :- room_assignment(S1, R), room_assignment(S2, R), S1!=S2.
+% #show roommate_assigned/3.
 
 % % Trying to place people with their preferred room type
-% :~ student_pref(N, T, L), room_assignment(N, R), room(F, R, O, H), T = O. [1@4]
+:~ student_pref(N, T, L), room_assignment(N, R), room(F, R, O, H), T = O. [1@4]
 
 % % Trying to place people with their LLC
 % :~ student_pref(N, T, L), room_assignment(N, R), room(F, R, O, H), L = H. [1@3]
