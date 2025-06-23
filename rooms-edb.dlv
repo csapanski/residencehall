@@ -118,3 +118,38 @@ room(3, 391, 2, 8).
 room(3, 393, 2, 8).
 room(3, 394, 2, 8).
 room(3, 395, 2, 8).
+
+two_window(108).
+two_window(110).
+two_window(118).
+two_window(119).
+two_window(120).
+two_window(174).
+two_window(176).
+two_window(184).
+two_window(186).
+two_window(201).
+two_window(202).
+two_window(209).
+two_window(211).
+two_window(217).
+two_window(219).
+two_window(220).
+two_window(221).
+two_window(241).
+two_window(264).
+two_window(275).
+two_window(277).
+two_window(285).
+two_window(287).
+two_window(294).
+two_window(311).
+two_window(318).
+two_window(319).
+two_window(321).
+two_window(341).
+two_window(345).
+two_window(365).
+two_window(366).
+two_window(375).
+two_window(377).
