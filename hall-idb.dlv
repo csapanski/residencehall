@@ -2,12 +2,21 @@
 % choice rule to assign exactly one room to each student
 {room_assignment(S, R) : room(F, R, O, H)} = 1 :- student(S, G).
 
-% % Check - hard constraints 
-% % All rooms must be filled to capacity
-% :- room(F, R, 1, H), not room_assignment(S, R), student(S, G).
-% :- room(F, R, 2, H), not room_assignment(S1, R), not room_assignment(S2, R), S1>S2, student(S1, G1), student(S2, G2).
-% :- room(F, R, 3, H), not room_assignment(S1, R), not room_assignment(S2, R), 
-%     not room_assignment(S3, R), S1>S2, S2>S3, S1>S3, student(S1, G1), student(S2, G2), student(S3, G3).
+% Check - hard constraints 
+
+% All rooms must have exactly their capacity in students
+
+% Bounding potential number of students in a room to avoid getting stuck in grounding
+num(0..229).
+
+% Calculating how many students are in each room
+num_in(R, N) :- #count{S : room_assignment(S, R)} = N, num(N), room(F, R, O, H).
+#show num_in/2.
+
+% Limiting number of students per room to its capacity
+:- room(F, R, 1, H), num_in(R, N), N!=1.
+:- room(F, R, 2, H), num_in(R, N), N!=2.
+:- room(F, R, 3, H), num_in(R, N), N!=3.
 
 % % Doubles or triples must contain students of the same gender
 :- room(F, R, O, H), room_assignment(S1, R), room_assignment(S2, R), student(S1, G1), 
@@ -16,17 +25,13 @@
 % % Fill Ethridge from the bottom floor up (if there are any empty rooms, they should be on the top floor)
 :- room(F1, R1, O1, H1), room(F2, R2, O2, H2), R1>R2, full_room(R2), empty_room(R1).
 
+% Seeing which rooms are empty / full
 full_room(R) :- room_assignment(S, R), student(S, G), room(F, R, O, H).
 empty_room(R) :- not full_room(R), room(F, R, O, H).
 % #show empty_room/1.
 
 % % Prioritize accommodations for students with disabilities to be placed in single rooms
 :- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
-
-% % Cannot overfill rooms
-% :- #count{S, R : room_assignment(S, R), room(F, R, 1, H)} != 1. 
-% :- #count{S, R : room_assignment(S, R), room(F, R, 2, H)} != 2. 
-% :- #count{S, R : room_assignment(S, R), room(F, R, 3, H)} != 3. 
 
 % % Lighten the load of student_pref by adding roommates.
 % roommates(N, R) :- student_pref(N, R, T, L).
