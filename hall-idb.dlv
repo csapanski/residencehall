@@ -14,11 +14,8 @@
     student(S2, G2), S1 != S2, G1 != G2.
 
 % % Fill Ethridge from the bottom floor up (if there are any empty rooms, they should be on the top floor)
-:- room(F1, R1, O1, H1), room(F2, R2, O2, H2), R1>R2, full_room(R2), empty_room(R1).
-
-full_room(R) :- room_assignment(S, R), student(S, G), room(F, R, O, H).
-empty_room(R) :- not full_room(R), room(F, R, O, H).
-% #show empty_room/1.
+:- room(F1, R1, O1, H1), room(F2, R2, O2, H1), not room_assignment(S1, R1), room_assignment(S2, R2),
+    R1 > R2, student(S1, G1), student(S2, G2).
 
 % % Prioritize accommodations for students with disabilities to be placed in single rooms
 :- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
