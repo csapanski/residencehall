@@ -11,7 +11,7 @@ num(0..229).
 
 % Calculating how many students are in each room
 num_in(R, N) :- #count{S : room_assignment(S, R)} = N, num(N), room(F, R, O, H).
-#show num_in/2.
+% #show num_in/2.
 
 % Limiting number of students per room to its capacity
 :- room(F, R, 1, H), num_in(R, N), N!=1.
@@ -35,7 +35,9 @@ empty_room(R) :- not full_room(R), room(F, R, O, H).
 
 % % Optimize 
 % % Trying to place people with their roommate choices
-
+:~ roommate_assigned(S1, S2, R), roommate(S1, S2). [1@5]
+roommate_assigned(S1, S2, R) :- room_assignment(S1, R), room_assignment(S2, R), S1!=S2.
+#show roommate_assigned/3.
 
 % % Trying to place people with their preferred room type
 % :~ student_pref(N, T, L), room_assignment(N, R), room(F, R, O, H), T = O. [1@4]
