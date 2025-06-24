@@ -1,8 +1,8 @@
-roommate(bobbi,bobbi).
-roommate(angelina,angelina).
-roommate(zonda,zonda).
-roommate(rhodia,rhodia).
-roommate(nanny,nanny).
+% roommate(bobbi,bobbi).
+% roommate(angelina,angelina).
+% roommate(zonda,zonda).
+% roommate(rhodia,rhodia).
+% roommate(nanny,nanny).
 roommate(bertie,shena).
 roommate(monica,shena).
 roommate(shena,bertie).
@@ -15,99 +15,99 @@ roommate(elisabet,mable).
 roommate(mable,elisabet).
 roommate(gertie,valentine).
 roommate(valentine,gertie).
-roommate(merci,darcie).
-roommate(darcie,merci).
-roommate(gwyn,andie).
-roommate(andie,gwyn).
-roommate(frannie,mitzi).
-roommate(mitzi,frannie).
-roommate(marketa,cinnamon).
-roommate(cinnamon,marketa).
-roommate(minda,sharleen).
-roommate(sharleen,minda).
-roommate(leland,dasie).
-roommate(dasie,leland).
-roommate(barbie,vanny).
-roommate(vanny,barbie).
-roommate(kathye,averil).
-roommate(averil,kathye).
-roommate(jennie,petronia).
-roommate(petronia,jennie).
-roommate(stacie,karalynn).
-roommate(karalynn,stacie).
-roommate(roxie,maurise).
-roommate(maurise,roxie).
-roommate(tammara,josselyn).
-roommate(josselyn,tammara).
-roommate(maude,aveline).
-roommate(aveline,maude).
-roommate(elie,mariann).
-roommate(mariann,elie).
-roommate(beckalyn,lisha).
-roommate(lisha,beckalyn).
-roommate(alida,jodi).
-roommate(jodi,alida).
-roommate(alina,lidia).
-roommate(lidia,alina).
-roommate(melisa,connie).
-roommate(connie,melisa).
-roommate(melania,maryjane).
-roommate(maryjane,melania).
-roommate(charlene,emilie).
-roommate(emilie,charlene).
-roommate(jazmin,annelise).
-roommate(annelise,jazmin).
-roommate(laurene,emyle).
-roommate(emyle,laurene).
-roommate(alana,marquita).
-roommate(marquita,alana).
-roommate(quint, quinton).
-roommate(quinton, quintus).
-roommate(quintus, quint).
-roommate(yigal,yigal).
-roommate(jimmy,jimmy).
-roommate(demetri,demetri).
-roommate(douglas,douglas).
-roommate(bartie,bartie).
-roommate(sidnee,fonz).
-roommate(saxon,fonz).
-roommate(fonz,sidnee).
-roommate(morse,derick).
-roommate(clinton,derick).
-roommate(derick,morse).
-roommate(marcellus,caldwell).
-roommate(caldwell,marcellus).
-roommate(tate,patsy).
-roommate(patsy,tate).
-roommate(jorge,karel).
-roommate(karel,jorge).
-roommate(prentiss,xever).
-roommate(xever,prentiss).
-roommate(kenyon,fitz).
-roommate(fitz,kenyon).
-roommate(inigo,constantine).
-roommate(constantine,inigo).
-roommate(quinn,nicolas).
-roommate(nicolas,quinn).
-roommate(fons,mikhail).
-roommate(mikhail,fons).
-roommate(theodor,mel).
-roommate(mel,theodor).
-roommate(chalmers,steffen).
-roommate(steffen,chalmers).
-roommate(normie,lewis).
-roommate(lewis,normie).
-roommate(stewart,costa).
-roommate(costa,stewart).
-roommate(rodrick,guy).
-roommate(guy,rodrick).
-roommate(woodrow,eldon).
-roommate(eldon,woodrow).
-roommate(geoffry,huntington).
-roommate(huntington,geoffry).
-roommate(solomon,bartlett).
-roommate(bartlett,solomon).
-roommate(dimitri,michail).
-roommate(michail,dimitri).
-roommate(morty,forrest).
-roommate(forrest,morty).
+% roommate(merci,darcie).
+% roommate(darcie,merci).
+% roommate(gwyn,andie).
+% roommate(andie,gwyn).
+% roommate(frannie,mitzi).
+% roommate(mitzi,frannie).
+% roommate(marketa,cinnamon).
+% roommate(cinnamon,marketa).
+% roommate(minda,sharleen).
+% roommate(sharleen,minda).
+% roommate(leland,dasie).
+% roommate(dasie,leland).
+% roommate(barbie,vanny).
+% roommate(vanny,barbie).
+% roommate(kathye,averil).
+% roommate(averil,kathye).
+% roommate(jennie,petronia).
+% roommate(petronia,jennie).
+% roommate(stacie,karalynn).
+% roommate(karalynn,stacie).
+% roommate(roxie,maurise).
+% roommate(maurise,roxie).
+% roommate(tammara,josselyn).
+% roommate(josselyn,tammara).
+% roommate(maude,aveline).
+% roommate(aveline,maude).
+% roommate(elie,mariann).
+% roommate(mariann,elie).
+% roommate(beckalyn,lisha).
+% roommate(lisha,beckalyn).
+% roommate(alida,jodi).
+% roommate(jodi,alida).
+% roommate(alina,lidia).
+% roommate(lidia,alina).
+% roommate(melisa,connie).
+% roommate(connie,melisa).
+% roommate(melania,maryjane).
+% roommate(maryjane,melania).
+% roommate(charlene,emilie).
+% roommate(emilie,charlene).
+% roommate(jazmin,annelise).
+% roommate(annelise,jazmin).
+% roommate(laurene,emyle).
+% roommate(emyle,laurene).
+% roommate(alana,marquita).
+% roommate(marquita,alana).
+% roommate(quint, quinton).
+% roommate(quinton, quintus).
+% roommate(quintus, quint).
+% roommate(yigal,yigal).
+% roommate(jimmy,jimmy).
+% roommate(demetri,demetri).
+% roommate(douglas,douglas).
+% roommate(bartie,bartie).
+% roommate(sidnee,fonz).
+% roommate(saxon,fonz).
+% roommate(fonz,sidnee).
+% roommate(morse,derick).
+% roommate(clinton,derick).
+% roommate(derick,morse).
+% roommate(marcellus,caldwell).
+% roommate(caldwell,marcellus).
+% roommate(tate,patsy).
+% roommate(patsy,tate).
+% roommate(jorge,karel).
+% roommate(karel,jorge).
+% roommate(prentiss,xever).
+% roommate(xever,prentiss).
+% roommate(kenyon,fitz).
+% roommate(fitz,kenyon).
+% roommate(inigo,constantine).
+% roommate(constantine,inigo).
+% roommate(quinn,nicolas).
+% roommate(nicolas,quinn).
+% roommate(fons,mikhail).
+% roommate(mikhail,fons).
+% roommate(theodor,mel).
+% roommate(mel,theodor).
+% roommate(chalmers,steffen).
+% roommate(steffen,chalmers).
+% roommate(normie,lewis).
+% roommate(lewis,normie).
+% roommate(stewart,costa).
+% roommate(costa,stewart).
+% roommate(rodrick,guy).
+% roommate(guy,rodrick).
+% roommate(woodrow,eldon).
+% roommate(eldon,woodrow).
+% roommate(geoffry,huntington).
+% roommate(huntington,geoffry).
+% roommate(solomon,bartlett).
+% roommate(bartlett,solomon).
+% roommate(dimitri,michail).
+% roommate(michail,dimitri).
+% roommate(morty,forrest).
+% roommate(forrest,morty).
