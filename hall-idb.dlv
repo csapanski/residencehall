@@ -33,32 +33,33 @@ empty_room(R) :- not full_room(R), room(F, R, O, H).
 % % Prioritize accommodations for students with disabilities to be placed in single rooms
 :- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
 
+% Optimize 
+% Trying to place people with their roommate choices
+:~ room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S2). [-1@4, S1, S2, R]
+
 % helper predicate to see if roommates are assigned to each other 
 % correct_roomie(S1, S2, R) :- room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S2).
 % #show correct_roomie/3.
 
-% hard constraint version 
-% :- room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S3), S2 != S3, S1!=S2.
+% Trying to place people with their LLC
+:~ room_assignment(S1, R1), room(F1, R1, O1, LLC), student_pref(S1, T1, LLC). [-1@3, S1, R1, F1, O1, LLC]
 
-% % Optimize 
-% % Trying to place people with their roommate choices
-:~ room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S2). [-1@1, S1, S2, R]
+% helper predicate to make sure people are in correct LLC 
+% in_LLC(S1, LLC) :- room_assignment(S1, R1), room(F1, R1, O1, LLC), student_pref(S1, T1, LLC).
+% #show in_LLC/2.
 
-% % Trying to place people with their LLC
-:~ room_assignment(S1, R1), room_assignment(S2, R2), room(F1, R1, O1, L1), room(F2, R2, O2, L2), L1=L2, 
-    student_pref(S1, T1, L1), student_pref(S2, T2, L2), S1!=S2, L1!=0. [-1@4, S1, R1, S2, R2, F1, O1, L1, F2, O2, L2, T1, T2]
-
-% % % Trying to place people with their preferred room type
-:~ student_pref(S, T, L), room_assignment(S, R), room(F, R, O, H), T = O. [-1@3, S, T, L, R, F, O, H]
+% Trying to place people with their preferred room type
+:~ student_pref(S, T, L), room_assignment(S, R), room(F, R, O, H), T = O. [-1@2, S, T, L, R, F, O, H]
 
 % helper predicate to see if people are in correct room type
 % correct_type(S, T, R) :- student_pref(S, T, L), room_assignment(S, R), room(F, R, O, H), T = O.
 % #show correct_type/3.
 
-% % % Trying to place people that want to live on a specific floor
-% :~ student_pref2(S, F, W), room_assignment(S, R), room(F, R, O, L). [1@2, S, F, W, R, F, O, L]
-
 % % Trying to place people who want two windows in corner rooms / rooms with two windows
-:~ student_pref2(S, F, 2), room_assignment(S, R), two_window(R). [-1@1, S, F, R]
+:~ student_prefs2(S, F, 2), room_assignment(S, R), two_window(R). [-1@1, S, F, R]
+
+% helper predicate to see if people are placed with two windows if they want them
+% two_window_pref_good(S, R) :- student_prefs2(S, F, 2), room_assignment(S, R), two_window(R).
+% #show two_window_pref_good/2.
 
 #show room_assignment/2.
