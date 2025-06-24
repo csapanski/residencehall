@@ -1,0 +1,12 @@
+roommate(maryann, leeann).
+roommate(leeann, mariann).
+roommate(mariann, maryann).
+
+roommate(yev, guy).
+roommate(guy, yev).
+
+roommate(kingsley, woodrow).
+roommate(woodrow, kingsley).
+
+roommate(kara, sharity).
+roommate(sharity, kara).
