@@ -1,0 +1,14 @@
+roommate(sarge, morse).
+roommate(morse, sarge).
+
+roommate(marcellus, lorenzo).
+roommate(lorenzo, marcellus).
+
+roommate(connie, melania).
+roommate(melania, connie).
+
+roommate(kip, fae).
+roommate(fae, kip).
+
+roommate(see, cy).
+roommate(cy, see).

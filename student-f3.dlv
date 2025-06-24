@@ -39,7 +39,7 @@ student(giffard, male).
 student(geoff, male).
 student(ros, male).
 student(zea, female).
-student(kara-lynn, female).
+student(kara, female).
 student(aila, female).
 student(jazmin, female).
 student(annelise, female).
