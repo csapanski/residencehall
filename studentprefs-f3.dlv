@@ -6,21 +6,8 @@ student_pref(chalmers,1,7).
 student_pref(dyson,2,7).
 student_pref(yev,1,6).
 student_pref(constantine,2,6).
-
-
-% student_pref(mikhail,2,0).
-% student_pref(sean,1,0).
-% student_pref(jimmy,1,7).
-% student_pref(clinton,2,6).
-% student_pref(gifford,2,7).
-% student_pref(woodrow,3,0).
-% student_pref(renaud,3,7).
-% student_pref(guy,1,0).
-% student_pref(forrest,1,7).
-% student_pref(caldwell,1,0).
-% student_pref(derick,1,0).
-% student_pref(penn,1,7).
-% student_pref(barny,2,7).
+student_pref(penn,1,7).
+student_pref(barny,2,7).
 % student_pref(quintus,1,6).
 % student_pref(pip,1,0).
 % student_pref(fons,3,6).
@@ -39,8 +26,7 @@ student_pref(constantine,2,6).
 % student_pref(solomon,1,0).
 % student_pref(giffard,2,0).
 % student_pref(geoff,2,0).
-% student_pref(ros,2,7).
-
+% student_pref(ross,2,7).
 % student_pref(zea,1,6).
 % student_pref(kara,2,6).
 % student_pref(aila,1,7).
@@ -90,10 +76,18 @@ student_pref(constantine,2,6).
 % student_pref(kathye,2,0).
 % student_pref(madalena,1,6).
 % student_pref(juditha,3,0).
-% student_pref(mitzi,3,7).v
-
-
-
+% student_pref(mitzi,3,7).
+% student_pref(mikhail,2,0).
+% student_pref(sean,1,0).
+% student_pref(jimmy,1,7).
+% student_pref(clinton,2,6).
+% student_pref(gifford,2,7).
+% student_pref(woodrow,3,0).
+% student_pref(renaud,3,7).
+% student_pref(guy,1,0).
+% student_pref(forrest,1,7).
+% student_pref(caldwell,1,0).
+% student_pref(derick,1,0).
 
 
 
@@ -176,3 +170,14 @@ student_prefs2(barny,3,1).
 % student_prefs2(madalena,3,2).
 % student_prefs2(juditha,2,1).
 % student_prefs2(mitzi,2,2).
+% student_prefs2(mikhail, 3, 1).
+% student_prefs2(sean, 1, 2).
+% student_prefs2(jimmy, 3, 1).
+% student_prefs2(clinton, 3, 2).
+% student_prefs2(gifford, 3, 1).
+% student_prefs2(woodrow, 1, 2).
+% student_prefs2(renaud, 3, 1).
+% student_prefs2(guy, 1, 1).
+% student_prefs2(forrest, 3, 2).
+% student_prefs2(caldwell, 2, 1).
+% student_prefs2(derick, 1, 1).
