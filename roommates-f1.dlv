@@ -1,0 +1,13 @@
+roommate(james, bobbie).
+roommate(bobbie, lin).
+roommate(lin, james).
+
+roommate(charlene, sharleen).
+roommate(sharleen, charlena).
+roommate(charlena, charlene).
+
+roommate(fran, ferdinand).
+roommate(ferdinand, fran).
+
+roommate(cinnamon, beckalyn).
+roommate(beckalyn, cinnamon).
