@@ -1,0 +1,36 @@
+room(1, 102, 3, 1).
+room(1, 103, 2, 1).
+room(1, 104, 2, 1).
+room(1, 108, 2, 1).
+room(1, 110, 2, 1).
+room(1, 111, 2, 1).
+room(1, 113, 2, 1).
+room(1, 115, 2, 1).
+room(1, 116, 2, 1).
+room(1, 118, 2, 1).
+room(1, 119, 1, 1).
+room(1, 120, 2, 1).
+room(1, 121, 2, 1).
+room(1, 173, 2, 2).
+room(1, 174, 2, 2).
+room(1, 175, 1, 2).
+room(1, 176, 2, 2).
+room(1, 178, 2, 2).
+room(1, 179, 2, 2).
+room(1, 181, 2, 2).
+room(1, 183, 2, 2).
+room(1, 184, 2, 2).
+room(1, 186, 2, 2).
+room(1, 190, 2, 2).
+room(1, 191, 2, 2).
+room(1, 193, 3, 2).
+
+two_window(108).
+two_window(110).
+two_window(118).
+two_window(119).
+two_window(120).
+two_window(174).
+two_window(176).
+two_window(184).
+two_window(186).
