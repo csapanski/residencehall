@@ -34,8 +34,8 @@ empty_room(R) :- not full_room(R), room(F, R, O, H).
 :- accomodation(S), room_assignment(S, R), room(F, R, O, H), O!=1. 
 
 % helper predicate to see if roommates are assigned to each other 
-correct_roomie(S1, S2, R) :- room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S2).
-#show correct_roomie/3.
+% correct_roomie(S1, S2, R) :- room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S2).
+% #show correct_roomie/3.
 
 % hard constraint version 
 % :- room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S3), S2 != S3, S1!=S2.
@@ -45,11 +45,11 @@ correct_roomie(S1, S2, R) :- room_assignment(S1, R), room_assignment(S2, R), roo
 :~ room_assignment(S1, R), room_assignment(S2, R), roommate(S1, S2). [-1@1, S1, S2, R]
 
 % % Trying to place people with their LLC
-% :~ room_assignment(S1, R1), room_assignment(S2, R2), room(F1, R1, O1, L1), room(F2, R2, O2, L2), L1=L2, 
-%     student_pref(S1, T1, L1), student_pref(S2, T2, L2). [L1@4, S1, R1, S2, R2, F1, O1, L1, F2, O2, L2, T1, T2]
+:~ room_assignment(S1, R1), room_assignment(S2, R2), room(F1, R1, O1, L1), room(F2, R2, O2, L2), L1=L2, 
+    student_pref(S1, T1, L1), student_pref(S2, T2, L2), S1!=S2, L1!=0. [-1@4, S1, R1, S2, R2, F1, O1, L1, F2, O2, L2, T1, T2]
 
 % % % Trying to place people with their preferred room type
-% :~ student_pref(N, T, L), room_assignment(N1, R), room(F, R, O, H), N=N1, T = O. [T@3, N, T, L, R, F, O, H]
+% :~ student_pref(S, T, L), room_assignment(S, R), room(F, R, O, H), N=N1, T = O. [T@3, S, T, L, R, F, O, H]
 
 % % % Trying to place people that want to live on a specific floor
 % :~ student_pref2(S, F, W), room_assignment(S, R), room(F, R, O, L). [1@2, S, F, W, R, F, O, L]
