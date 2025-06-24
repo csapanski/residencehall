@@ -8,20 +8,20 @@ student_pref(bartlett,2,0).
 student_pref(levy,2,1).
 student_pref(jorge,2,1).
 student_pref(inigo,2,1).
-% student_pref(lin,2,1).
-% student_pref(quinton,2,1).
-% student_pref(blayne,2,1).
-% student_pref(redmond,2,1).
-% student_pref(morty,2,1).
-% student_pref(carsten,2,1).
-% student_pref(jule,2,1).
-% student_pref(steffen,2,1).
-% student_pref(bobbie,2,1).
-% student_pref(fran,2,1).
-% student_pref(sebastien,2,1).
-% student_pref(fitz,2,1).
-% student_pref(yanaton,2,1).
-% student_pref(james,2,1).
+student_pref(lin,2,1).
+student_pref(quinton,2,1).
+student_pref(blayne,2,1).
+student_pref(redmond,2,1).
+student_pref(morty,2,1).
+student_pref(carsten,2,1).
+student_pref(jule,2,1).
+student_pref(steffen,2,1).
+student_pref(bobbie,2,1).
+student_pref(sebastien,2,1).
+student_pref(fitz,2,1).
+student_pref(james,2,1).
+% !student_pref(yanaton,2,1).
+% !student_pref(fran,2,1).
 % student_pref(mirelle,2,1).
 % student_pref(chandra,2,1).
 % student_pref(lisha,2,1).
