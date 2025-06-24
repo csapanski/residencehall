@@ -1,0 +1,87 @@
+student_prefs2(karel,3,1).
+student_prefs2(kenyon,2,2).
+student_prefs2(dean,2,2).
+student_prefs2(aylmer,1,2).
+student_prefs2(sarge,2,2).
+student_prefs2(ewart,1,1).
+student_prefs2(fonz,3,2).
+student_prefs2(roman,3,2).
+student_prefs2(morse,1,1).
+student_prefs2(lorenzo,3,1).
+% student_prefs2(david,2,2).
+% student_prefs2(prentiss,1,2).
+% student_prefs2(sidnee,1,2).
+% student_prefs2(torr,2,2).
+% student_prefs2(eldon,2,2).
+% student_prefs2(marcellus,1,1).
+% student_prefs2(peyton,3,2).
+% student_prefs2(demetri,1,1).
+% student_prefs2(saxon,1,2).
+% student_prefs2(tymon,1,2).
+% student_prefs2(dorian,1,1).
+% student_prefs2(nev,1,1).
+% student_prefs2(saundra,3,2).
+% student_prefs2(ruby,2,1).
+% student_prefs2(silas,1,2).
+% student_prefs2(cy,2,2).
+% student_prefs2(broddie,1,2).
+% student_prefs2(normie,3,2).
+% student_prefs2(quint,2,2).
+% student_prefs2(obadiah,2,1).
+% student_prefs2(mylo,2,2).
+% student_prefs2(see,3,2).
+% student_prefs2(michail,2,2).
+% student_prefs2(douglas,3,1).
+% student_prefs2(patsy,3,2).
+% student_prefs2(huntington,2,2).
+% student_prefs2(lewis,3,1).
+% student_prefs2(abraham,1,1).
+% student_prefs2(kasey,3,1).
+% student_prefs2(zenia,3,1).
+% student_prefs2(gertie,1,2).
+% student_prefs2(frannie,2,1).
+% student_prefs2(laureen,2,2).
+% student_prefs2(shaylah,3,1).
+% student_prefs2(eustacia,2,1).
+% student_prefs2(maude,2,1).
+% student_prefs2(melania,3,1).
+% student_prefs2(lyndsay,1,1).
+% student_prefs2(nanny,3,2).
+% student_prefs2(nikoletta,3,1).
+% student_prefs2(connie,2,2).
+% student_prefs2(barbie,1,1).
+% student_prefs2(marietta,2,1).
+% student_prefs2(elie,2,2).
+% student_prefs2(marquita,3,2).
+% student_prefs2(lurlene,1,2).
+% student_prefs2(zonda,2,2).
+% student_prefs2(ursala,3,1).
+% student_prefs2(angelina,3,2).
+% student_prefs2(candice,3,1).
+% student_prefs2(andie,3,2).
+% student_prefs2(valentia,2,2).
+% student_prefs2(guinna,2,2).
+% student_prefs2(fae,1,2).
+% student_prefs2(grethel,1,1).
+% student_prefs2(tammara,2,2).
+% student_prefs2(darcee,3,2).
+% student_prefs2(dianna,2,1).
+% student_prefs2(jolene,1,2).
+% student_prefs2(joice,3,1).
+% student_prefs2(kip,3,2).
+% student_prefs2(dasie,3,2).
+% student_prefs2(valentine,1,2).
+% student_prefs2(leesa,3,2).
+% student_prefs2(calla,1,1).
+% student_prefs2(minda,1,1).
+% student_prefs2(bobbette,2,2).
+% student_prefs2(bella,2,1).
+% student_prefs2(courtenay,3,2).
+% student_prefs2(celinda,3,2).
+% student_prefs2(emyle,1,2).
+% student_prefs2(isa,1,1).
+% student_prefs2(jennie,2,2).
+% student_prefs2(alison,1,2).
+% student_prefs2(dotty,1,2).
+% student_prefs2(karissa,3,2).
+% student_prefs2(stacie,2,1).
