@@ -1,3 +1,42 @@
+student_pref(karel,3,2).
+student_pref(kenyon,2,0).
+student_pref(dean,1,0).
+student_pref(aylmer,3,2).
+student_pref(sarge,2,0).
+student_pref(ewart,2,1).
+student_pref(fonz,1,2).
+student_pref(roman,1,2).
+student_pref(morse,2,2).
+student_pref(lorenzo,2,0).
+% student_pref(david,3,1).
+% student_pref(prentiss,2,2).
+% student_pref(sidnee,3,2).
+% student_pref(torr,2,2).
+% student_pref(eldon,3,0).
+% student_pref(marcellus,2,2).
+% student_pref(peyton,3,0).
+% student_pref(demetri,1,0).
+% student_pref(saxon,1,0).
+% student_pref(tymon,1,2).
+% student_pref(dorian,1,2).
+% student_pref(nev,2,0).
+% student_pref(saundra,3,2).
+% student_pref(ruby,3,1).
+% student_pref(silas,3,1).
+% student_pref(cy,3,2).
+% student_pref(broddie,1,0).
+% student_pref(normie,1,0).
+% student_pref(quint,1,1).
+% student_pref(obadiah,3,0).
+% student_pref(mylo,2,1).
+% student_pref(see,1,0).
+% student_pref(michail,3,0).
+% student_pref(douglas,2,2).
+% student_pref(patsy,1,1).
+% student_pref(huntington,3,1).
+% student_pref(lewis,2,1).
+% student_pref(abraham,3,0).
+
 student_prefs2(karel,3,1).
 student_prefs2(kenyon,2,2).
 student_prefs2(dean,2,2).
